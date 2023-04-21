@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Signin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+
+<style>
+
+        body{
+            background-color: aliceblue;
+        }
+            
+        
+        #box{
+            background-color: white;
+            padding-bottom: 30px;
+        }
+        #username{
+            padding-left: 60px;
+        }
+        #pass{
+            padding-left: 60px;
+            
+        }
+        #button{
+            padding-top: 40px;
+        }
+        
+        .forgot{
+            text-align: right;
+            padding-right: 55px;
+        }
+        #btn{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            margin-bottom: 25px;           
+        }  
+
+    body{
+        background-color: aliceblue;
+    }
+
+    #title{
+        text-align: center;
+        background-color: rgba(199, 199, 199, 0.884);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+    marquee{
+        color: rgb(66, 66, 255);
+        font-size: 18px;
+    }
+
+    #mark{
+        text-align: center;
+    } 
+
+    .alert{
+        padding: 1px;
+    }
+
+    .navbar{
+        background-color: rgb(160, 160, 253);
+    }
+
+    li a{
+        color: whitesmoke;
+    }
+
+    li a .home:link{
+      background-color: tomato;
+    }
+
+    footer{
+      font-size: 25px;
+      background-color: rgb(160, 160, 253);
+      padding: 60px;
+      padding-bottom: 100px;
+    }
+
+    footer a {
+      padding: 13px 13px;
+      color: whitesmoke;
+    }
+
+    footer address{
+      float: left;
+      padding-left: 10px;
+    }
+
+        </style>
+
+
+        <body>
+
+            
+            <div class="container-fluid">
+                <div class="text-primary" id="title">
+                    <h1 >LIBRARY MANAGEMENT SYSTEM</h1></div>
+            </div>
+        
+        <div>
+
+            <h4 style="margin-left: 1200px; color: rgb(125, 23, 221);">Don't have an account ?</h4>
+            <a href="#" class="btn btn-primary btn-lg" style="margin-left: 1400px; margin-top: -60px;">Register</a>
+
+        </div>
+            <form><center>
+                <fieldset id="box" style="width: 400px;">
+
+                    <h1 style="color: blueviolet; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">LOGIN</h1>
+
+            
+
+            <h4 id="username" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: left;">Username</h4>
+            <input type="text" id="jun" style="width: 280px; height: 30px;" >
+
+            <h4 id="pass" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-align: left;"> Password</h4>
+            <input type="password" id="bla" style="width: 280px; height: 30px;"><br>
+
+            <h6 class="forgot"><a href="#">Forgot Password?</a></h6>
+
+            <a href="home.html" class="btn btn-primary btn-md" onclick="login()">Submit</a>
+            
+            
+        </fieldset></center>
+        </form>
+        </div>
+
+        <div class="container">
+            <h5 style="text-align: center;margin-top: 25px;">New User? Click here to<a href="#"> Register</a></h5>
+        </div><br><br><br>
+
+        <div class="container-fluid">
+            <footer>
+            
+              <div class="container" style="text-align: center;">
+              <a href="#"><i class=" fa fa-facebook"></i></a>
+              <a href="#"><i class=" fa fa-twitter"></i></a>
+              <a href="#"><i class=" fa fa-linkedin"></i></a>
+              <a href="#"><i class=" fa fa-whatsapp"></i></a>
+              <a href="#"><i class=" fa fa-instagram"></i></a>
+            </div>
+            
+              <p style="float: left; font-size: 18px; color: whitesmoke; margin-top: 10px; margin-left: 43%;">
+                <i>Developed by Oscar A</i>
+            </p>   
+            </footer>
+            </div>
+
+
+        <script>
+
+            function login(){
+                var jun = document.getElementById("jun").value;
+                let bla = document.getElementById("bla").value;
+
+                if(jun==null||jun=="")
+                {
+                    alert("Enter Username");
+                    return false;
+                }
+
+                else if(bla==null||bla=="")
+                {
+                    alert("Enter password");
+                    return false;
+                }
+            }
+        </script>
+
+
+
+    </body>
+</html>

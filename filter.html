@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+      </head>
+
+<style>
+
+body{
+        background-color: aliceblue;
+        min-height: 100vh;
+    }
+
+    #title{
+        text-align: center;
+        background-color: rgba(199, 199, 199, 0.884);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+    marquee{
+        color: rgb(66, 66, 255);
+        font-size: 18px;
+    }
+
+    #mark{
+        text-align: center;
+    } 
+
+    .alert{
+        padding: 1px;
+    }
+
+    .navbar{
+        background-color: rgb(160, 160, 253);
+    }
+
+    li a{
+        color: whitesmoke;
+    }
+
+    .demo {
+  text-align: center;
+  font-size: 40px;
+  background-color: #3287c1 ;
+  color: whitesmoke;
+    }
+
+    #search{
+        margin-bottom: 20px;
+    }
+
+    footer{
+      font-size: 25px;
+      bottom: -80px;
+      background-color: rgb(160, 160, 253);
+      padding: 60px;
+      padding-bottom: 100px;
+      position: relative;
+      width: 100%;
+    }
+
+    footer a {
+      padding: 13px 13px;
+      color: whitesmoke;
+    }
+
+    footer address{
+      float: left;
+      padding-left: 10px;
+    }
+
+    #books-list tr:hover {
+      background-color: rgb(160, 160, 253);
+    }
+
+.search-result {
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+
+.search-result > p:hover {
+  background-color:rgb(160, 160, 253);
+  cursor: pointer;
+}
+.table-hover tbody tr:hover {
+  background-color:rgb(160, 160, 253);
+}
+
+
+    
+    
+</style>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="text-primary" id="title">
+            <h1 >SEARCH BOOKS</h1></div>
+    </div>
+
+    <div class="container">
+        <marquee>"Libraries store the energy that fuels the imagination. They open up windows to the world and inspire us to explore and achieve, and contribute to improving our quality of life."   - Sidney Sheldon </marquee>
+    </div>
+
+    <div class="container-fluid">
+
+        <nav class="navbar">
+        
+            <div class="navbar-header">
+                <a class="navbar-brand">Welcome !</a>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li class="home"><a href="home.html">Home</a></li>
+                <li><a href="books_avail.html">Books Available</a></li>
+				<li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html" style="margin-left: 970px;"><span class="glyphicon glyphicon-share"></span>  Logout</a></li>
+            </ul>
+
+            
+        </nav>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+            <input type="text" class="form-control" placeholder="Book Title" id="search-book">
+            <div id="book-dropdown" class="search-result"></div>           
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" placeholder="Author Name" id="search-author">
+          <div id="author-dropdown" class="search-result"></div>
+        </div>
+    
+        <div class="col-sm-4">
+          <input type="text" class="form-control" placeholder="Subject Name" id="search-subject">
+          <div id="subject-dropdown" class="search-result"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-bottom: 30px;margin-top: 30px;">
+      <a class="btn btn-md" style="float: right; background-color: #5b75d4; color: aliceblue;"> Filter search</a>
+  </div>
+  <div class="container">
+    <h4 id="search-count" style="color: red; text-align: right;"></h4>
+  </div>
+
+  <div class="container-fluid">
+    <h2 style="text-align: center; background-color: rgb(160, 160, 253); padding: 5px; border-radius: 5px; color: whitesmoke;">Search Results</h2>
+  </div>
+
+  <div class="container">
+    <table id="book-table" class="table table-hover">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Subject</th>
+          <th>Publish Date</th>
+          <th>Available</th>
+        </tr>
+      </thead>
+      <tbody id="book-table-body">
+      </tbody>
+    </table>
+  </div>
+  
+    
+      
+       
+
+
+  <div class="container-fluid">
+    <footer>
+    
+      <div class="container" style="text-align: center;">
+      <a href="#"><i class=" fa fa-facebook"></i></a>
+      <a href="#"><i class=" fa fa-twitter"></i></a>
+      <a href="#"><i class=" fa fa-linkedin"></i></a>
+      <a href="#"><i class=" fa fa-whatsapp"></i></a>
+      <a href="#"><i class=" fa fa-instagram"></i></a>
+    </div>
+    
+      <p style="float: left; font-size: 18px; color: whitesmoke; margin-top: 10px; margin-left: 43%;">
+        <i>Developed by Oscar A</i>
+    </p>   
+    </footer>
+    </div>
+
+
+</body>
+
+<script>
+  const searchInput = document.querySelector('#search-book');
+  const bookDropdown = document.querySelector('#book-dropdown');
+
+  searchInput.addEventListener('input', () => {
+    const searchQuery = searchInput.value.toLowerCase().trim();
+
+    fetch('books.json')
+      .then(response => response.json())
+      .then(books => {
+        const filteredBooks = books.filter(book => {
+          return (
+            book.title.toLowerCase().includes(searchQuery) ||
+            book.author.toLowerCase().includes(searchQuery) ||
+            book.subject.toLowerCase().includes(searchQuery) ||
+            book.publishDate.toLowerCase().includes(searchQuery)
+          );
+        });
+
+        if (filteredBooks.length === 0) {
+          bookDropdown.innerHTML = '<p>No books found</p>';
+        } else {
+          const dropdownHTML = filteredBooks.map(book => {
+            return `<p>${book.title}</p>`;
+          }).join('');
+          bookDropdown.innerHTML = dropdownHTML;
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching books:', error);
+        bookDropdown.innerHTML = '<p>Error fetching books</p>';
+      });
+  });
+  
+
+  const searchAuthorInput = document.querySelector('#search-author');
+  const authorDropdown = document.querySelector('#author-dropdown');
+
+  searchAuthorInput.addEventListener('input', () => {
+  const searchQuery = searchAuthorInput.value.toLowerCase().trim();
+
+  fetch('books.json')
+      .then(response => response.json())
+      .then(books => {
+      const filteredAuthors = new Set();
+      books.filter(book => {
+          return book.author.toLowerCase().includes(searchQuery);
+      }).forEach(book => {
+          filteredAuthors.add(book.author);
+      });
+
+      if (filteredAuthors.size === 0) {
+          authorDropdown.innerHTML = '<p>No authors found</p>';
+      } else {
+          const dropdownHTML = [...filteredAuthors].map(author => {
+          return `<p>${author}</p>`;
+          }).join('');
+          authorDropdown.innerHTML = dropdownHTML;
+      }
+      })
+      .catch(error => {
+      console.error('Error fetching books:', error);
+      authorDropdown.innerHTML = '<p>Error fetching authors</p>';
+      });
+  });
+
+
+
+      const searchSubjectInput = document.querySelector('#search-subject');
+      const subjectDropdown = document.querySelector('#subject-dropdown');
+
+      searchSubjectInput.addEventListener('input', () => {
+      const searchQuery = searchSubjectInput.value.toLowerCase().trim();
+
+      fetch('books.json')
+          .then(response => response.json())
+          .then(books => {
+          const filteredSubjects = new Set();
+          books.forEach(book => {
+              if (book.subject.toLowerCase().includes(searchQuery)) {
+              filteredSubjects.add(book.subject);
+              }
+          });
+
+          if (filteredSubjects.size === 0) {
+              subjectDropdown.innerHTML = '<p>No subjects found</p>';
+          } else {
+              const dropdownHTML = [...filteredSubjects].map(subject => {
+              return `<p>${subject}</p>`;
+              }).join('');
+              subjectDropdown.innerHTML = dropdownHTML;
+          }
+          })
+          .catch(error => {
+          console.error('Error fetching books:', error);
+          subjectDropdown.innerHTML = '<p>Error fetching subjects</p>';
+          });
+      });
+
+      bookDropdown.addEventListener('click', (event) => {
+        if (event.target.tagName === 'P') {
+          searchInput.value = event.target.textContent;
+          bookDropdown.innerHTML = '';
+        }
+      });
+
+      authorDropdown.addEventListener('click', (event) => {
+        if (event.target.tagName === 'P') {
+          searchAuthorInput.value = event.target.textContent;
+          authorDropdown.innerHTML = '';
+        }
+      });
+
+      subjectDropdown.addEventListener('click', (event) => {
+        if (event.target.tagName === 'P') {
+          searchSubjectInput.value = event.target.textContent;
+          subjectDropdown.innerHTML = '';
+        }
+      });
+      
+      fetch('books.json')
+  .then(response => response.json())
+  .then(data => {
+    const searchInput = document.getElementById("search-book");
+    const bookTableBody = document.getElementById("book-table-body");
+    const searchCount = document.getElementById("search-count");
+
+    function displayBook(book) {
+      const newRow = bookTableBody.insertRow();
+      newRow.innerHTML = `
+        <td>${book.title}</td>
+        <td>${book.author}</td>
+        <td>${book.subject}</td>
+        <td>${book.publishDate}</td>
+        <td>${book.available ? "Yes" : "No"}</td>
+      `;
+    }
+
+    function searchBook(title) {
+      bookTableBody.innerHTML = "";
+      const filteredBooks = bookData.filter(book => book.title.toLowerCase().includes(title.toLowerCase()));
+      searchCount.textContent = `${filteredBooks.length} books found.`;
+      filteredBooks.forEach(book => displayBook(book));
+    }
+
+    searchInput.addEventListener("input", () => {
+      searchBook(searchInput.value);
+    });
+    bookData = data;
+  })
+  .catch(error => console.error(error));
+
+
+
+  fetch('books.json')
+  .then(response => response.json())
+  .then(data => {
+    const searchInput = document.getElementById("search-author");
+const bookTableBody = document.getElementById("book-table-body");
+const searchCount = document.getElementById("search-count");
+
+function displayBook(book) {
+  const newRow = bookTableBody.insertRow();
+  newRow.innerHTML = `
+    <td>${book.title}</td>
+    <td>${book.author}</td>
+    <td>${book.subject}</td>
+    <td>${book.publishDate}</td>
+    <td>${book.available ? "Yes" : "No"}</td>
+  `;
+}
+
+function searchBook(author) {
+  bookTableBody.innerHTML = "";
+  const filteredBooks = bookData.filter(book => book.author.toLowerCase().includes(author.toLowerCase()));
+  searchCount.textContent = `${filteredBooks.length} books found.`;
+  filteredBooks.forEach(book => displayBook(book));
+}
+
+
+searchInput.addEventListener("input", () => {
+  searchBook(searchInput.value);
+});
+
+    bookData = data;
+  })
+  .catch(error => console.error(error));
+
+
+  fetch('books.json')
+  .then(response => response.json())
+  .then(data => {
+    const searchInput = document.getElementById("search-subject");
+const bookTableBody = document.getElementById("book-table-body");
+const searchCount = document.getElementById("search-count");
+
+function displayBook(book) {
+  const newRow = bookTableBody.insertRow();
+  newRow.innerHTML = `
+    <td>${book.title}</td>
+    <td>${book.author}</td>
+    <td>${book.subject}</td>
+    <td>${book.publishDate}</td>
+    <td>${book.available ? "Yes" : "No"}</td>
+  `;
+}
+
+function searchBook(subject) {
+  bookTableBody.innerHTML = "";
+  const filteredBooks = bookData.filter(book => book.subject.toLowerCase().includes(subject.toLowerCase()));
+  searchCount.textContent = `${filteredBooks.length} books found.`;
+  filteredBooks.forEach(book => displayBook(book));
+}
+
+searchInput.addEventListener("input", () => {
+  searchBook(searchInput.value);
+});
+
+    bookData = data;
+  })
+  .catch(error => console.error(error));
+  
+  
+</script>
+
+</html>

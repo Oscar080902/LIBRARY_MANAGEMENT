@@ -1,0 +1,61 @@
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+input[type=text], input[type=date] {
+	padding: 5px;
+	margin: 5px;
+}
+
+#filter {
+	margin-top: 20px;
+}
+
+#filter div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 5px;
+}
+
+#filter label {
+	width: 100px;
+}
+
+#filter span {
+	margin-left: 10px;
+}
+
+#books table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#books th, #books td {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#pagination {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.page {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.active {
+	background-color: #ccc;
+}

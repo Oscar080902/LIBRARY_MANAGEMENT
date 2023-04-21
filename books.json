@@ -1,0 +1,263 @@
+[
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "subject": "Fiction",
+      "publishDate": "1960",
+      "available": true
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "subject": "Fiction",
+      "publishDate": "1949",
+      "available": false
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "subject": "Fiction",
+      "publishDate": "1925",
+      "available": true
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "subject": "Fiction",
+      "publishDate": "1813",
+      "available": false
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "subject": "Fiction",
+      "publishDate": "1951",
+      "available": true
+    },
+    {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "subject": "Fiction",
+        "publishDate": "1813",
+        "available": false
+      },
+      {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "subject": "Fiction",
+        "publishDate": "1813",
+        "available": false
+      },
+      {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "subject": "Fiction",
+        "publishDate": "1960",
+        "available": true
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "subject": "Fiction",
+        "publishDate": "1949",
+        "available": false
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "subject": "Fiction",
+        "publishDate": "1925",
+        "available": true
+    },
+    {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "subject": "Fiction",
+        "publishDate": "1813",
+        "available": false
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "subject": "Fiction",
+        "publishDate": "1951",
+        "available": true
+    },
+    {
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "subject": "Fantasy",
+        "publishDate": "1954",
+        "available": true
+    },
+    {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "subject": "Fantasy",
+        "publishDate": "1937",
+        "available": true
+    },
+    {
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "subject": "Fantasy",
+        "publishDate": "1997",
+        "available": true
+    },
+    {
+        "title": "Harry Potter and the Chamber of Secrets",
+        "author": "J.K. Rowling",
+        "subject": "Fantasy",
+        "publishDate": "1998",
+        "available": true
+    },
+    {
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "author": "J.K. Rowling",
+        "subject": "Fantasy",
+        "publishDate": "1999",
+        "available": true
+    },
+    {
+        "title": "Harry Potter and the Goblet of Fire",
+        "author": "J.K. Rowling",
+        "subject": "Fantasy",
+        "publishDate": "2000",
+        "available": true
+    },
+    {
+        "title": "Harry Potter and the Order of Phoenix",
+        "author": "J.K. Rowling",
+        "subject": "Fantasy",
+        "publishDate": "2003",
+        "available": true
+    },
+    {
+        "title": "Harry Potter and the Half-Blood Prince",
+        "author": "J.K. Rowling",
+        "subject": "Fantasy",
+        "publishDate": "2005",
+        "available": true
+    },
+    {
+        "title": "Harry Potter and the Deathly Hallows",
+        "author": "J.K. Rowling",
+        "subject": "Fantasy",
+        "publishDate": "2007",
+        "available": true
+    },
+    {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "subject": "Fiction",
+        "publishDate": "1813",
+        "available": false
+     },
+     {
+      "title": "Introduction to Electrical Engineering",
+      "author": "M.S. Naidu",
+      "subject": "Electrical Engineering",
+      "publishDate": "2002",
+      "available": true
+    },
+    {
+      "title": "Mechanical Engineering Design",
+      "author": "Joseph E. Shigley",
+      "subject": "Mechanical Engineering",
+      "publishDate": "2004",
+      "available": false
+    },
+    {
+      "title": "Civil Engineering Materials",
+      "author": "Shan Somayaji",
+      "subject": "Civil Engineering",
+      "publishDate": "2007",
+      "available": true
+    },
+    {
+      "title": "Introduction to Chemical Engineering",
+      "author": "S. P. Singh",
+      "subject": "Chemical Engineering",
+      "publishDate": "2008",
+      "available": false
+    },
+    {
+      "title": "Computer-Aided Manufacturing",
+      "author": "Tien-Chien Chang",
+      "subject": "Manufacturing Engineering",
+      "publishDate": "2002",
+      "available": true
+    },
+    {
+      "title": "The Lean Startup",
+      "author": "Eric Ries",
+      "subject": "Business",
+      "publishDate": "2011",
+      "available": true
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "subject": "Psychology",
+      "publishDate": "2011",
+      "available": true
+    },
+    {
+      "title": "The Design of Everyday Things",
+      "author": "Don Norman",
+      "subject": "Design",
+      "publishDate": "1988",
+      "available": true
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "subject": "Fiction",
+      "publishDate": "1988",
+      "available": true
+    },
+    {
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "subject": "History",
+      "publishDate": "2011",
+      "available": true
+    },
+    {
+      "title": "The Immortal Life of Henrietta Lacks",
+      "author": "Rebecca Skloot",
+      "subject": "Science",
+      "publishDate": "2010",
+      "available": true
+    },
+    {
+      "title": "The Art of War",
+      "author": "Sun Tzu",
+      "subject": "Military strategy",
+      "publishDate": "-500",
+      "available": true
+    },
+    {
+      "title": "The 7 Habits of Highly Effective People",
+      "author": "Stephen Covey",
+      "subject": "Self-help",
+      "publishDate": "1989",
+      "available": true
+    },
+    {
+      "title": "The Elements of Style",
+      "author": "William Strunk Jr.",
+      "subject": "Writing",
+      "publishDate": "1918",
+      "available": true
+    },
+    {
+      "title": "The Power of Now",
+      "author": "Eckhart Tolle",
+      "subject": "Spirituality",
+      "publishDate": "1997",
+      "available": true
+    }
+
+  ]
+  

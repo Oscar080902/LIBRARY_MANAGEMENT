@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+      </head>
+
+
+<body>
+
+  <label for="search">Search by Title:</label>
+  <input type="text" id="search" name="search">
+  
+  <table id="book-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Subject</th>
+        <th>Publish Date</th>
+        <th>Available</th>
+      </tr>
+    </thead>
+    <tbody id="book-table-body">
+    </tbody>
+  </table>
+  
+</body>
+
+<script>
+
+
+fetch('books.json')
+  .then(response => response.json())
+  .then(data => {
+    const searchInput = document.getElementById("search");
+const bookTableBody = document.getElementById("book-table-body");
+
+function displayBook(book) {
+  const newRow = bookTableBody.insertRow();
+  newRow.innerHTML = `
+    <td>${book.title}</td>
+    <td>${book.author}</td>
+    <td>${book.subject}</td>
+    <td>${book.publishDate}</td>
+    <td>${book.available ? "Yes" : "No"}</td>
+  `;
+}
+
+function searchBook(title) {
+  bookTableBody.innerHTML = "";
+  const filteredBooks = bookData.filter(book => book.title.toLowerCase().includes(title.toLowerCase()));
+  filteredBooks.forEach(book => displayBook(book));
+}
+
+searchInput.addEventListener("input", () => {
+  searchBook(searchInput.value);
+});
+    bookData = data;
+  })
+  .catch(error => console.error(error));
+
+ 
+</script>
+
+</html>
